@@ -1,0 +1,124 @@
+FAT FREE CRM COMMERCIAL SOURCE CODE LICENSE AGREEMENT
+
+This source code agreement (hereinafter - "Agreement") is made between Michael Dvorkin
+dba Fat Free Software (hereinafter - "Fat Free Software") and you, the customer
+(hereinafter - "Licensee"). Fat Free Software and Licensee agree as follows:
+
+
+1. DEFINITIONS
+
+For purposes of this Agreement, the following definitions shall apply:
+
+1.1 "Software" means the Fat Free CRM software product licensed by Licensee from Fat
+Free Software.
+
+1.2 "Source Code" means existing programming code that implements the Software as well
+as all modifications made to the Software during the first calendar year since this
+Agreement goes into effect.
+
+1.3 "Derivative Works" means any software programs which are developed by Licensee and
+which incorporate or contain modifications of any part of Source Code, and including
+any revision, modification, translation, abridgment, condensation, expansion or any
+other form in which Source Code, may be recast, transformed or adapted.
+
+1.4 "Purpose" means the creation of bug fixes, corrections, enhancements, revisions,
+modifications, and adaptations of Source Code and addition of new interfaces, features,
+and functionality to the Software. 
+
+
+2. LICENSEE RIGHTS AND RESTRICTIONS
+
+2.1 The Source Code is licensed, and not sold. By completing this Agreement and subject
+to the restrictions and consideration stated below, Fat Free Software grants Licensee
+non-exclusive, non-transferable, worldwide right to:
+
+(a) use and reproduce as many copies of the Source Code as are reasonably necessary only
+for the purpose of exercising the rights granted under this Agreement; 
+
+(b) modify and create Derivative Works of the Source Code for the Purpose; 
+
+(c) use, reproduce, have reproduced, sell, distribute, perform or otherwise transfer,
+directly or through distributors or resellers, Derivative Works, that are consistent
+with the Purpose.
+
+2.2. No rights are granted to Licensee hereunder to sell, distribute, make available,
+publish, sublicense, or otherwise transfer the Source Code except as provided in
+section 2.1 above. Licensee shall not use the Source Code for anything other than its
+intended, legitimate, and legal purpose. 
+
+2.3. The terms of this Agreement do not entitle Licensee to receive any support or
+maintenance services from Fat Free Software with respect to the Source Code. 
+
+
+3. OWNERSHIP
+
+The Source Code is copyrighted work protected by the United States copyright law and
+contains proprietary information protected at law. Fat Free Software maintains title
+and ownership of all copyright interests in the Source Code.
+
+
+4. LIMITATION ON LIABILITY
+
+To the extent permitted under applicable law, Fat Free Software is licensing the Source
+Code "AS IS", WITH NO EXPRESS OR IMPLIED WARRANTIES OF ANY KIND, INCLUDING, BUT NOT
+LIMITED TO, ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR
+PURPOSE OR WARRANTIES AGAINST INFRINGEMENT OF ANY PROPRIETARY RIGHTS OF A THIRD PARTY.
+IN NO EVENT WILL FAT FREE SOFTWARE BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR
+FOR DIRECT, INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF OR INABILITY
+TO USE THE SOURCE CODE.
+
+
+5. TERMINATION.
+
+5.1. This Agreement shall become effective on the date when Licensee pays agreed amount
+to Fat Free Software, and shall remain in effect perpetually unless terminated as
+provided herein.
+
+5.2. Without prejudice to any other rights, Fat Free Software shall have the right to
+terminate this Agreement if Licensee fails to comply with the terms and conditions of
+this Agreement. In such event, Licensee shall destroy all copies of the Source Code.
+
+5.3 Licensee shall have the right to terminate this Agreement at any time by destroying
+all copies of the Source Code. 
+
+
+6. GOVERNING LAW AND DISPUTES.
+
+This License shall be governed by California law and controlling United States Federal
+law provisions except to the extent applicable law provides otherwise. The application
+of the United Nations Convention on Contracts for the International Sale of Goods is
+expressly excluded. With respect to disputes:
+
+(a) all disputes relating to this Agreement shall be subject to final and binding
+arbitration;
+
+(b) any arbitration relating to this Agreement shall be held in Santa Clara County,
+California, USA;
+
+(c) any litigation relating to this Agreement shall be subject to the jurisdiction of
+the Federal Courts of the Northern District of California, with venue lying in Santa
+Clara County, California, USA.
+
+
+
+Fat Free Software
+10385 S. Tantau Ave.
+Cupertino, CA 95014 USA                           
+                                                  ____________________________________
+                                                  Licensee
+
+                                                   
+____________________________________              ____________________________________
+Name                                              Name
+
+
+____________________________________              ____________________________________
+Signature                                         Signature
+
+
+____________________________________              ____________________________________
+Date                                              Date
+
+
+
