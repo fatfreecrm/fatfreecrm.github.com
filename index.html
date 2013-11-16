@@ -3,125 +3,116 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Fat Free CRM - Ruby On Rails-based open source CRM platform</title>
-  <description>
-<script type="text/javascript" src="fancybox/jquery-1.3.2.min.js"></script>
-<script type="text/javascript" src="fancybox/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="fancybox/jquery.fancybox-1.2.1.pack.js"></script>
-<link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen">
-<script type="text/javascript">
-  $(document).ready(function() {
-    for (i = 1;  i <= 15;  i++) {
-      $("a#i" + i).fancybox({
-        padding      : 0,
-        zoomOpacity  : true,
-        overlayShow  : false,
-        zoomSpeedIn  : 300,
-        zoomSpeedOut : 300,
-        hideOnContentClick : true
+  <script type="text/javascript" src="fancybox/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".fancybox").fancybox({
+        padding: 0
       });
+    });
+  </script>
+
+  <script type='text/javascript'>
+
+  var _ues = {
+  host:'ffcrm.userecho.com',
+  forum:'8632',
+  lang:'en',
+  tab_icon_show:false,
+  tab_corner_radius:0,
+  tab_font_size:18,
+  tab_top:'350px',
+  tab_image_hash:'RmVlZGJhY2s%3D',
+  tab_alignment:'right',
+  tab_text_color:'#FFFFFF',
+  tab_bg_color:'#3333CC',
+  tab_hover_color:'#F45C5C'
+  };
+
+  (function() {
+      var _ue = document.createElement('script'); _ue.type = 'text/javascript'; _ue.async = true;
+      _ue.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/' : 'http://') + 'cdn.userecho.com/js/widget-1.4.gz.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(_ue, s);
+    })();
+
+  </script>
+
+  <style>
+    #ue-feedback-tab { padding: 3px 4px 3px 2px; }
+    #ue-feedback-tab:hover { padding-right: 7px !important; }
+
+    #tfbTab:hover { padding-right: 3px; }
+
+    body {
+      margin: 10px auto;
+      width: 760px;
     }
-  });
-</script>
+    body, tr, td, ul, li, div, span {
+      color: #2f2f2f;
+      font: normal 12px 'Lucida Grande', Verdana, Helvetica;
+    }
+    a {
+      color: royalblue;
+      text-decoration: none;
+    }
+    a:hover {
+      color: darkorange;
+      text-decoration: underline;
+    }
+    ul {
+      margin: 4px;
+      padding: 0px 0px 0px 20px;
+    }
+    h3 {
+      font: normal 28px 'Lucida Grande', Verdana, Helvetica;
+      margin: 0px 10px 20px 0px;
+      padding: 0px;
+      border-bottom: 1px #2f2f2f solid;
+    }
+    blockquote {
+      float: right;
+      font: italic 11px 'Lucida Grande', Verdana, Helvetica;
+      margin: 2px 12px 0px 0px;
+      padding: 0px;
+      width: 300px;
+    }
 
-<script type='text/javascript'>
+    .panel {
+      color: lightsalmon;
+      font: bold 18px 'Lucida Grande', Verdana, Helvetica;
+      margin: 0px 0px 20px 0px;
+      width: 220px;
+    }
 
-var _ues = {
-host:'ffcrm.userecho.com',
-forum:'8632',
-lang:'en',
-tab_icon_show:false,
-tab_corner_radius:0,
-tab_font_size:18,
-tab_top:'350px',
-tab_image_hash:'RmVlZGJhY2s%3D',
-tab_alignment:'right',
-tab_text_color:'#FFFFFF',
-tab_bg_color:'#3333CC',
-tab_hover_color:'#F45C5C'
-};
+    .lorem {
+      border-top: 1px silver dotted;
+      color: #2f2f2f;
+      font: normal 12px 'Lucida Grande', Verdana, Helvetica;
+      padding: 3px 0px 0px 0px;
+    }
 
-(function() {
-    var _ue = document.createElement('script'); _ue.type = 'text/javascript'; _ue.async = true;
-    _ue.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/' : 'http://') + 'cdn.userecho.com/js/widget-1.4.gz.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(_ue, s);
-  })();
+    .thumb {
+      border: none;
+      margin: 6px 6px 6px 6px;
+    }
 
-</script>
-
-<style>
-  #ue-feedback-tab { padding: 3px 4px 3px 2px; }
-  #ue-feedback-tab:hover { padding-right: 7px !important; }
-
-  #tfbTab:hover { padding-right: 3px; }
-
-  body {
-    margin: 10px auto;
-    width: 760px;
-  }
-  body, tr, td, ul, li, div, span {
-    color: #2f2f2f;
-    font: normal 12px 'Lucida Grande', Verdana, Helvetica;
-  }
-  a {
-    color: royalblue;
-    text-decoration: none;
-  }
-  a:hover {
-    color: darkorange;
-    text-decoration: underline;
-  }
-  ul {
-    margin: 4px;
-    padding: 0px 0px 0px 20px;
-  }
-  h3 {
-    font: normal 28px 'Lucida Grande', Verdana, Helvetica;
-    margin: 0px 10px 20px 0px;
-    padding: 0px;
-    border-bottom: 1px #2f2f2f solid;
-  }
-  blockquote {
-    float: right;
-    font: italic 11px 'Lucida Grande', Verdana, Helvetica;
-    margin: 2px 12px 0px 0px;
-    padding: 0px;
-    width: 300px;
-  }
-
-  .panel {
-    color: lightsalmon;
-    font: bold 18px 'Lucida Grande', Verdana, Helvetica;
-    margin: 0px 0px 20px 0px;
-    width: 220px;
-  }
-
-  .lorem {
-    border-top: 1px silver dotted;
-    color: #2f2f2f;
-    font: normal 12px 'Lucida Grande', Verdana, Helvetica;
-    padding: 3px 0px 0px 0px;
-  }
-
-  .thumb {
-    border: none;
-    margin: 6px 6px 6px 6px;
-  }
-
-  .avatar {
-    float: left;
-    margin: 0px 10px 0px 0px;
-    height: 50px;
-    width: 50px;
-  }
-  .icon {
-    border: none;
-    margin: 5px 2px 0px 0px;
-  }
-  .footer {
-    font-size: 9px;
-    padding: 4px 10px 10px 0px;
-  }
-</style>
+    .avatar {
+      float: left;
+      margin: 0px 10px 0px 0px;
+      height: 50px;
+      width: 50px;
+    }
+    .icon {
+      border: none;
+      margin: 5px 2px 0px 0px;
+    }
+    .footer {
+      font-size: 9px;
+      padding: 4px 10px 10px 0px;
+    }
+  </style>
 </head>
 
 <body>
@@ -234,21 +225,21 @@ tab_hover_color:'#F45C5C'
 
     </td>
     <td valign="top" align="center">
-      <a id="i1" href="images/tasks.png" title="Manage pending tasks"><img src="images/tasks_t.png" class="thumb"></a>
-      <a id="i2" href="images/task_create.png" title="Create new task"><img src="images/task_create_t.png" class="thumb"></a>
-      <a id="i3" href="images/task_edit.png" title="Reschedule or reassign existing task"><img src="images/task_edit_t.png" class="thumb"></a>
-      <a id="i4" href="images/qfind.png" title="Quickly find an opportunity from anywhere"><img src="images/qfind_t.png" class="thumb"></a>
-      <a id="i5" href="images/campaign_create.png" title="Create new campaign"><img src="images/campaign_create_t.png" class="thumb"></a>
-      <a id="i6" href="images/campaign_edit.png" title="Search for 'good' and edit the campaign found"><img src="images/campaign_edit_t.png" class="thumb"></a>
-      <a id="i7" href="images/leads.png" title="List of leads sorted by last name"><img src="images/leads_t.png" class="thumb"></a>
-      <a id="i8" href="images/leads_options.png" title="Options for leads"><img src="images/leads_options_t.png" class="thumb"></a>
-      <a id="i9" href="images/lead_edit.png" title="Edit a lead -- reassign, change status, rating, etc."><img src="images/lead_edit_t.png" class="thumb"></a>
-      <a id="i10" href="images/account.png" title="Manage an account -- add notes, tasks, contacts, and opportunities"><img src="images/account_t.png" class="thumb"></a>
-      <a id="i11" href="images/account_edit.png" title="Edit account information"><img src="images/account_edit_t.png" class="thumb"></a>
-      <a id="i12" href="images/contact_create.png" title="Create a contact"><img src="images/contact_create_t.png" class="thumb"></a>
-      <a id="i13" href="images/contact_opportunity.png" title="Create an opportunity associated with the contact"><img src="images/contact_opportunity_t.png" class="thumb"></a>
-      <a id="i14" href="images/opportunities.png" title="List of opportunities, sorted by closing probability"><img src="images/opportunities_t.png" class="thumb"></a>
-      <a id="i15" href="images/opportunity.png" title="Manage the opportunity -- add notes, tasks, and contacts"><img src="images/opportunity_t.png" class="thumb"></a>
+      <a class="fancybox" rel="group" id="i1" href="images/tasks.png" title="Manage pending tasks"><img src="images/tasks_t.png" class="thumb"></a>
+      <a class="fancybox" rel="group" id="i2" href="images/task_create.png" title="Create new task"><img src="images/task_create_t.png" class="thumb"></a>
+      <a class="fancybox" rel="group" id="i3" href="images/task_edit.png" title="Reschedule or reassign existing task"><img src="images/task_edit_t.png" class="thumb"></a>
+      <a class="fancybox" rel="group" id="i4" href="images/qfind.png" title="Quickly find an opportunity from anywhere"><img src="images/qfind_t.png" class="thumb"></a>
+      <a class="fancybox" rel="group" id="i5" href="images/campaign_create.png" title="Create new campaign"><img src="images/campaign_create_t.png" class="thumb"></a>
+      <a class="fancybox" rel="group" id="i6" href="images/campaign_edit.png" title="Search for 'good' and edit the campaign found"><img src="images/campaign_edit_t.png" class="thumb"></a>
+      <a class="fancybox" rel="group" id="i7" href="images/leads.png" title="List of leads sorted by last name"><img src="images/leads_t.png" class="thumb"></a>
+      <a class="fancybox" rel="group" id="i8" href="images/leads_options.png" title="Options for leads"><img src="images/leads_options_t.png" class="thumb"></a>
+      <a class="fancybox" rel="group" id="i9" href="images/lead_edit.png" title="Edit a lead -- reassign, change status, rating, etc."><img src="images/lead_edit_t.png" class="thumb"></a>
+      <a class="fancybox" rel="group" id="i10" href="images/account.png" title="Manage an account -- add notes, tasks, contacts, and opportunities"><img src="images/account_t.png" class="thumb"></a>
+      <a class="fancybox" rel="group" id="i11" href="images/account_edit.png" title="Edit account information"><img src="images/account_edit_t.png" class="thumb"></a>
+      <a class="fancybox" rel="group" id="i12" href="images/contact_create.png" title="Create a contact"><img src="images/contact_create_t.png" class="thumb"></a>
+      <a class="fancybox" rel="group" id="i13" href="images/contact_opportunity.png" title="Create an opportunity associated with the contact"><img src="images/contact_opportunity_t.png" class="thumb"></a>
+      <a class="fancybox" rel="group" id="i14" href="images/opportunities.png" title="List of opportunities, sorted by closing probability"><img src="images/opportunities_t.png" class="thumb"></a>
+      <a class="fancybox" rel="group" id="i15" href="images/opportunity.png" title="Manage the opportunity -- add notes, tasks, and contacts"><img src="images/opportunity_t.png" class="thumb"></a>
     </td>
   </tr>
   <tr>
