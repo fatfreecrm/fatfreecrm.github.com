@@ -1,143 +1,89 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--[if !IE 7]>
+    <style type="text/css">
+      #wrap {display:table;height:100%}
+      </style>
+<![endif]-->
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="css/reset_styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
   <title>Fat Free CRM - Ruby On Rails-based open source CRM platform</title>
-  <script type="text/javascript" src="fancybox/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
-  <link rel="stylesheet" href="fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $(".fancybox").fancybox({
-        padding: 0
-      });
-    });
-  </script>
+  <meta content='Fat Free CRM is an open source Ruby on Rails -based customer relationship management platform. Out of the box it features group collaboration, campaign and lead management, contact lists, and opportunity tracking.' name='description' />
+  <meta content="free open source rails crm customer relationship managment teamware salesforce" name="keywords" />
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta content='width=device-width' name='viewport'>
+    <script type="text/javascript">
 
-  <script type='text/javascript'>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-32476693-1']);
+      _gaq.push(['_trackPageview']);
 
-  var _ues = {
-  host:'ffcrm.userecho.com',
-  forum:'8632',
-  lang:'en',
-  tab_icon_show:false,
-  tab_corner_radius:0,
-  tab_font_size:18,
-  tab_top:'350px',
-  tab_image_hash:'RmVlZGJhY2s%3D',
-  tab_alignment:'right',
-  tab_text_color:'#FFFFFF',
-  tab_bg_color:'#3333CC',
-  tab_hover_color:'#F45C5C'
-  };
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
-  (function() {
-      var _ue = document.createElement('script'); _ue.type = 'text/javascript'; _ue.async = true;
-      _ue.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/' : 'http://') + 'cdn.userecho.com/js/widget-1.4.gz.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(_ue, s);
-    })();
-
-  </script>
-
-  <style>
-    #ue-feedback-tab { padding: 3px 4px 3px 2px; }
-    #ue-feedback-tab:hover { padding-right: 7px !important; }
-
-    #tfbTab:hover { padding-right: 3px; }
-
-    body {
-      margin: 10px auto;
-      width: 760px;
-    }
-    body, tr, td, ul, li, div, span {
-      color: #2f2f2f;
-      font: normal 12px 'Lucida Grande', Verdana, Helvetica;
-    }
-    a {
-      color: royalblue;
-      text-decoration: none;
-    }
-    a:hover {
-      color: darkorange;
-      text-decoration: underline;
-    }
-    ul {
-      margin: 4px;
-      padding: 0px 0px 0px 20px;
-    }
-    h3 {
-      font: normal 28px 'Lucida Grande', Verdana, Helvetica;
-      margin: 0px 10px 20px 0px;
-      padding: 0px;
-      border-bottom: 1px #2f2f2f solid;
-    }
-    blockquote {
-      float: right;
-      font: italic 11px 'Lucida Grande', Verdana, Helvetica;
-      margin: 2px 12px 0px 0px;
-      padding: 0px;
-      width: 300px;
-    }
-
-    .panel {
-      color: lightsalmon;
-      font: bold 18px 'Lucida Grande', Verdana, Helvetica;
-      margin: 0px 0px 20px 0px;
-      width: 220px;
-    }
-
-    .lorem {
-      border-top: 1px silver dotted;
-      color: #2f2f2f;
-      font: normal 12px 'Lucida Grande', Verdana, Helvetica;
-      padding: 3px 0px 0px 0px;
-    }
-
-    .thumb {
-      border: none;
-      margin: 6px 6px 6px 6px;
-    }
-
-    .avatar {
-      float: left;
-      margin: 0px 10px 0px 0px;
-      height: 50px;
-      width: 50px;
-    }
-    .icon {
-      border: none;
-      margin: 5px 2px 0px 0px;
-    }
-    .footer {
-      font-size: 9px;
-      padding: 4px 10px 10px 0px;
-    }
-  </style>
+    </script>
 </head>
-
 <body>
-  <table cellpadding="0" cellspacing="0" border="0">
-  <tr>
-    <td colspan="2">
-      <blockquote>"First they ignore you, then they laugh at you, then they fight you,
-      then you win." -- Mahatma Gandhi</blockquote>
-      <h3>Fat Free CRM</h3>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top">
-        <div style="background:honeydew; padding:5px; margin: 0px 0px 10px 0px">
-          Help us improve Fat Free CRM.
-          Please take a moment to complete <a href="http://www.formstack.com/forms/?1118780-yrROQqSjPx">User Survey</a>. Thank you!
+  <!--Main Content-->
+  <div id="wrap">
+    <div id="header">
+      <div class="logo">
+        <a href="/"><img src="images/logo.png" alt="Fat Free CRM"/></a>
+      </div>
+      <!--start nav bar-->
+      <ul id="list-nav">
+        <li><a href="http://demo.fatfreecrm.com/">Online Demo</a></li>
+        <li><a href="http://guides.fatfreecrm.com/">Guides</a></li>
+        <li><a href="https://github.com/fatfreecrm/fat_free_crm">Downloads</a></li>
+      </ul>
+      <!--end nav bar-->
+    </div>
+    <div id="main">
+      <div id="container">
+        <p class="pitch body">You earned your clients with diligence; keep them with Fat Free CRM.</p>
+        <div class="center">
+          <p class="body">What is Fat Free CRM?</p>
+          <p class="small">An open source CRM designed to be<br/>highly customizable; elegant in simplicity.</p>
+          <p class="body">How do I get started?</p>
+          <p class="small">Grab the code from GitHub<br/>deploy it to your favourite host.</p>
+          <div id="launch">
+            <div class="launch">
+              <a style="text-indent:-90000px;" href="http://demo.fatfreecrm.com/">Try Demo Now</a>
+            </div>
+            <p>Username: aaron | Password: aaron</p>
+            <span></span>
+            <a href="https://github.com/fatfreecrm/fat_free_crm"><p>Source available on Github<img class="mini_logo" src="images/github-white.png" /></p></a>
+          </div>
+          <div id="back" class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider back">
+              <img src="images/1.jpg" alt="manage campaigns" title="Manage campaigns" />
+              <img src="images/2.jpg" alt="Detailed contact creations" title="Detailed contact creations" />
+              <img src="images/3.jpg" alt="Powerful search" title="Powerful search" />
+            </div>
+          </div>
         </div>
+        <p class="body else">Awesome CRM Features</p>
+        <p class="names">manage leads, build camapaigns, search, open source, free, lead scoring</p>
+        <!-- <p class="body else">Look who else is using Fat Free CRM!</p> -->
+        <!-- <p class="names">Cyberdyne Systems <span class="grey">The Korova Milkbar</span><span class="light_grey"> Paper Street Soap Company</span> The Leftorium<br/><span class="grey">Dunder Mifflin</span><span class="light_grey"> Wolfram and Heart</span> Stay Puft Corporation<span class="grey"> Oceanic Airlines</span></p> -->
+      </div>
+    </div>
 
-      <div class="panel">
-        What
-        <div class="lorem">
-          <b>Fat Free CRM</b> is an open source <a href="http://www.rubyonrails.org">Ruby
-          on Rails</a>-based
-          <a href="http://en.wikipedia.org/wiki/Customer_relationship_management">customer
-          relationship management</a> platform. Out of the box it features group
+    <!--Footer-->
+    <div id="footer" >
+
+      <div class="info">
+        <p class="heading">What</p>
+        <p style="font-size:15px;padding: 12px 22px 0 22px;">
+          <b>Fat Free CRM</b> is an open source<br /> <a href="http://www.rubyonrails.org">Ruby on Rails</a>-based
+          <a href="http://en.wikipedia.org/wiki/Customer_relationship_management">customer relationship management</a> platform. Out of the box it features group
           collaboration, campaign and lead management, contact
           lists, and opportunity tracking.
 
@@ -151,126 +97,88 @@
           code base that can be easily extended by developers.
           <a href="http://github.com/fatfreecrm/fat_free_crm/tree/master">Check it out</a>
           and <a href="http://github.com/guides/fork-a-project-and-submit-your-modifications">fork away</a>!
-
-        </div>
+        </p>
       </div>
 
-      <div class="panel">
-        Where
-        <div class="lorem">
-          Source code of <b>Fat Free CRM</b> is hosted at
-          <a href="http://github.com/fatfreecrm/fat_free_crm/tree/master">Github</a>. Other helpful resources:
-            <br/>
-            <br/>&raquo; <a href="http://github.com/fatfreecrm/fat_free_crm/downloads">Source code downloads</a>
-            <br/>&raquo; <a href="http://guides.fatfreecrm.com">Guides</a>
-            <br/>&raquo; <a href="http://fatfreecrm.lighthouseapp.com">Bug reports and feature requests</a>
-            <br/>&raquo; <a href="https://github.com/fatfreecrm/fat_free_crm/wiki/Available-plugins">List of available plugins</a>
-            <br/>&raquo; <a href="http://groups.google.com/group/fat-free-crm-users">Discussion group for users</a>
-            <br/>&raquo; <a href="http://groups.google.com/group/fat-free-crm-dev">Discussion group for developers</a>
-            <br/>&raquo; <a href="http://twitter.com/fatfreecrm">Twitter commit updates</a>
-            <br/>&raquo; <a href="http://itunes.com/apps/senbei">Senbei: iPhone client software</a>
-            <br/>&raquo; <a href="http://demo.fatfreecrm.com">Online demo site</a>
-        </div>
+      <div class="res">
+        <p class="heading">Where</p>
+        <br/> <a href="http://github.com/fatfreecrm/fat_free_crm/tree/master">Github</a>
+        <br/> <a href="https://github.com/fatfreecrm/fat_free_crm">Source code downloads</a>
+        <br/> <a href="http://guides.fatfreecrm.com">Guides</a>
+        <br/> <a href="http://fatfreecrm.lighthouseapp.com">Bug reports and feature requests</a>
+        <br/> <a href="https://github.com/fatfreecrm/fat_free_crm/wiki/Available-plugins">List of available plugins</a>
+        <br/> <a href="http://groups.google.com/group/fat-free-crm-users">Discussion group for users</a>
+        <br/> <a href="http://groups.google.com/group/fat-free-crm-dev">Discussion group for developers</a>
+        <br/> <a href="http://twitter.com/fatfreecrm">Twitter commit updates</a>
+        <br/> <a href="http://itunes.com/apps/senbei">Senbei: iPhone client software</a>
+        <br/> <a href="http://demo.fatfreecrm.com/">Online demo site</a>
       </div>
 
-      <div class="panel">
-        Who
-        <div class="lorem">
-          <img src="gravatar.jpg" class="avatar">
-          <div class="vcard">
-            Michael Dvorkin
-            <br/><a href="&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x6D;&#x69;&#x6B;&#x65;&#x40;&#x66;&#x61;&#x74;&#x66;&#x72;&#x65;&#x65;&#x63;&#x72;&#x6D;&#x2E;&#x63;&#x6F;&#x6D;">&#x6D;&#x69;&#x6B;&#x65;&#x40;&#x66;&#x61;&#x74;&#x66;&#x72;&#x65;&#x65;&#x63;&#x72;&#x6D;&#x2E;&#x63;&#x6F;&#x6D;</a><br />
-            <a href="http://twitter.com/mid"><img src="twitter.gif" class="icon"></a>
-            <a href="http://www.linkedin.com/in/mikedvorkin"><img src="linkedin.gif" class="icon"></a>
-            <!-- a href="http://www.facebook.com/fatfreecrm"><img src="facebook.gif" class="icon"></a -->
-            <a href="http://github.com/michaeldv/"><img src="http://github.com/favicon.ico" style="width:16px;" class="icon"></a>
-            <!-- <script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
-            <a href="skype:midstream?call"><img src="skype.png" class="icon" width="20" height="20" alt="Skype"/></a> -->
-          </div>
-        </div>
-        <div style="padding:10px 0px 0px 0px">
-          <img src="images/nathan.jpg" class="avatar">
-          <div class="vcard">
-            Nathan Broadbent
-            <br/><a href="&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x6E;&#x61;&#x74;&#x68;&#x61;&#x6E;&#x40;&#x66;&#x61;&#x74;&#x66;&#x72;&#x65;&#x65;&#x63;&#x72;&#x6D;&#x2E;&#x63;&#x6F;&#x6D;">&#x6E;&#x61;&#x74;&#x68;&#x61;&#x6E;&#x40;&#x66;&#x61;&#x74;&#x66;&#x72;&#x65;&#x65;&#x63;&#x72;&#x6D;&#x2E;&#x63;&#x6F;&#x6D;</a><br />
-            <a href="http://twitter.com/nathanf77"><img src="twitter.gif" class="icon"></a>
-            <a href="http://www.linkedin.com/profile/view?id=74450241"><img src="linkedin.gif" class="icon"></a>
-            <!-- a href="http://www.facebook.com/fatfreecrm"><img src="facebook.gif" class="icon"></a -->
-            <a href="https://github.com/ndbroadbent"><img src="http://github.com/favicon.ico" style="width:16px;" class="icon"></a>
-          </div>
-        </div>
-        <div style="padding:10px 0px 0px 0px">
-          <img src="images/ben.jpg" class="avatar">
-          <div class="vcard">
-            Ben Tillman
-            <br/><a href="&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x77;&#x61;&#x72;&#x70;&#x40;&#x66;&#x61;&#x74;&#x66;&#x72;&#x65;&#x65;&#x63;&#x72;&#x6D;&#x2E;&#x63;&#x6F;&#x6D;">&#x77;&#x61;&#x72;&#x70;&#x40;&#x66;&#x61;&#x74;&#x66;&#x72;&#x65;&#x65;&#x63;&#x72;&#x6D;&#x2E;&#x63;&#x6F;&#x6D;</a><br />
-            <a href="http://twitter.com/altwarp"><img src="twitter.gif" class="icon"></a>
-            <a href="http://www.linkedin.com/in/bntillman"><img src="linkedin.gif" class="icon"></a>
-            <a href="https://github.com/warp"><img src="http://github.com/favicon.ico" style="width:16px;" class="icon"></a>
-          </div>
+      <div class="leg">
+        <p class="heading">Who</p>
+
+        <div class="vcard">
+          <img src="images/gravatar.jpg" class="avatar" width="50" height="50" />
+          <span>Michael Dvorkin</span>
+          <br /><a href="mailto:mike@fatfreecrm.com">mike@fatfreecrm.com</a><br />
+          <a href="http://twitter.com/mid"><img src="images/twitter.gif" class="icon" /></a>
+          <a href="http://www.linkedin.com/in/mikedvorkin"><img src="images/linkedin.gif" class="icon" /></a>
+          <a href="http://github.com/michaeldv/"><img src="http://github.com/favicon.ico" class="icon"/></a>
         </div>
 
-        <div style="padding:10px 0px 0px 0px">
-          <img src="images/steve.jpg" class="avatar" />
-
-          <div class="vcard">
-            Steve Kenworthy
-            <br /><a href="mailto:steve@fatfreecrm.com">steve@fatfreecrm.com</a><br />
-            <a href="http://twitter.com/steveyken"><img src="twitter.gif" class="icon" /></a>
-            <a href="https://github.com/steveyken"><img src="http://github.com/favicon.ico" style="width:16px;" class="icon" /></a>
-          </div>
+        <div class="vcard">
+          <img src="images/nathan.jpg" class="avatar" width="50" height="50" />
+          <span>Nathan Broadbent</span>
+          <br /><a href="mailto:nathan@fatfreecrm.com">nathan@fatfreecrm.com</a><br />
+          <a href="http://twitter.com/nathanf77"><img src="images/twitter.gif" class="icon" /></a>
+          <a href="http://www.linkedin.com/profile/view?id=74450241"><img src="images/linkedin.gif" class="icon" /></a>
+          <a href="https://github.com/ndbroadbent"><img src="http://github.com/favicon.ico" class="icon" /></a>
         </div>
-        <!-- div style="font-weight:normal; font-size:10px; color:green; padding-top:4px">I am currently available for select projects.</div -->
+
+        <div class="vcard">
+          <img src="images/steve.jpg" class="avatar" width="50" height="50" />
+          <span>Steve Kenworthy</span>
+          <br /><a href="mailto:steve@fatfreecrm.com">steve@fatfreecrm.com</a><br />
+          <a href="http://twitter.com/steveyken"><img src="images/twitter.gif" class="icon" /></a>
+          <a href="https://github.com/steveyken"><img src="http://github.com/favicon.ico" class="icon" /></a>
+        </div>
+
+        <div class="vcard">
+          <img src="images/ben.jpg" class="avatar" width="50" height="50" />
+          <span>Ben Tillman</span>
+          <br /><a href="mailto:warp@fatfreecrm.com">warp@fatfreecrm.com</a><br />
+          <a href="http://twitter.com/altwarp"><img src="images/twitter.gif" class="icon" /></a>
+          <a href="http://www.linkedin.com/in/bntillman"><img src="images/linkedin.gif" class="icon" /></a>
+          <a href="https://github.com/warp"><img src="http://github.com/favicon.ico" class="icon" /></a>
+        </div>
+
       </div>
+    </div>
 
-    </td>
-    <td valign="top" align="center">
-      <a class="fancybox" rel="group" id="i1" href="images/tasks.png" title="Manage pending tasks"><img src="images/tasks_t.png" class="thumb"></a>
-      <a class="fancybox" rel="group" id="i2" href="images/task_create.png" title="Create new task"><img src="images/task_create_t.png" class="thumb"></a>
-      <a class="fancybox" rel="group" id="i3" href="images/task_edit.png" title="Reschedule or reassign existing task"><img src="images/task_edit_t.png" class="thumb"></a>
-      <a class="fancybox" rel="group" id="i4" href="images/qfind.png" title="Quickly find an opportunity from anywhere"><img src="images/qfind_t.png" class="thumb"></a>
-      <a class="fancybox" rel="group" id="i5" href="images/campaign_create.png" title="Create new campaign"><img src="images/campaign_create_t.png" class="thumb"></a>
-      <a class="fancybox" rel="group" id="i6" href="images/campaign_edit.png" title="Search for 'good' and edit the campaign found"><img src="images/campaign_edit_t.png" class="thumb"></a>
-      <a class="fancybox" rel="group" id="i7" href="images/leads.png" title="List of leads sorted by last name"><img src="images/leads_t.png" class="thumb"></a>
-      <a class="fancybox" rel="group" id="i8" href="images/leads_options.png" title="Options for leads"><img src="images/leads_options_t.png" class="thumb"></a>
-      <a class="fancybox" rel="group" id="i9" href="images/lead_edit.png" title="Edit a lead -- reassign, change status, rating, etc."><img src="images/lead_edit_t.png" class="thumb"></a>
-      <a class="fancybox" rel="group" id="i10" href="images/account.png" title="Manage an account -- add notes, tasks, contacts, and opportunities"><img src="images/account_t.png" class="thumb"></a>
-      <a class="fancybox" rel="group" id="i11" href="images/account_edit.png" title="Edit account information"><img src="images/account_edit_t.png" class="thumb"></a>
-      <a class="fancybox" rel="group" id="i12" href="images/contact_create.png" title="Create a contact"><img src="images/contact_create_t.png" class="thumb"></a>
-      <a class="fancybox" rel="group" id="i13" href="images/contact_opportunity.png" title="Create an opportunity associated with the contact"><img src="images/contact_opportunity_t.png" class="thumb"></a>
-      <a class="fancybox" rel="group" id="i14" href="images/opportunities.png" title="List of opportunities, sorted by closing probability"><img src="images/opportunities_t.png" class="thumb"></a>
-      <a class="fancybox" rel="group" id="i15" href="images/opportunity.png" title="Manage the opportunity -- add notes, tasks, and contacts"><img src="images/opportunity_t.png" class="thumb"></a>
-    </td>
-  </tr>
-  <tr>
-    <td class="footer">
-      <a href="http://www.addthis.com/bookmark.php?v=250" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://s7.addthis.com/static/btn/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa-4a404f264c68fd7f"></script>
-    </td>
-    <td align="right" class="footer">
-      Copyright &copy; 2008-<script type="text/javascript">document.write(new Date().getFullYear());</script> by fatfreecrm.com
-    </td>
-  </tr>
-</table>
+    <div style="width:100%;height:50px;background-color:#8BC5E8;margin-top:25px;line-height:50px;">
+      <span style="padding-left:20px;">Copyright &copy; 2008-2013 by fatfreecrm.com</span>
+    </div>
 
-<a href="http://github.com/fatfreecrm/fat_free_crm/tree/master"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub" /></a>
+  </div>
 
-<script src='http://files.go2web20.net/twitterbadge/1.0/badge.js' type='text/javascript'></script>
-<script type='text/javascript' charset='utf-8'>
-tfb.account = 'mid';
-tfb.label = 'follow-me';
-tfb.color = '#35ccff';
-tfb.side = 'r';
-tfb.top = 180;
-tfb.showbadge();
-</script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+    <script src="jscript/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('#slider').nivoSlider({
+          effect:'fade', // Specify sets like: 'fold,fade,sliceDown'
+          animSpeed:500, // Slide transition speed
+          pauseTime:7000, // How long each slide will show
+          startSlide:0, // Set starting Slide (0 index)
+          directionNav:false, // Next & Prev navigation
+        });
+      });
+    </script>
 
-<script type="text/javascript">
-document.write(unescape("%3Cscript src='" + "http://www.google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try { var pageTracker = _gat._getTracker("UA-9340926-1"); pageTracker._trackPageview();
-} catch(err) {}</script>
-</body>
+    <script type="text/javascript">
+      try { var pageTracker = _gat._getTracker("UA-9340926-1"); pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
 
+  </body>
 </html>
-

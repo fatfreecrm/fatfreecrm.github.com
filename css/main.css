@@ -1,0 +1,317 @@
+/*  
+Sticky Footer Solution
+by Steve Hatcher 
+http://stever.ca
+http://www.cssstickyfooter.com
+*/
+
+* {margin:0;
+padding:0;
+} 
+
+/* must declare 0 margins on everything, also for main layout components use padding, not 
+vertical margins (top and bottom) to add spacing, else those margins get added to total height 
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+html, body {
+    height: 100%;
+    font-family: helvetica, arial, sans-serif
+}
+
+#wrap {
+    min-height: 100%;
+    width:1000px;
+    margin:0 auto;
+    -webkit-box-shadow: 0px 0px 20px 4px #adadad;
+    -moz-box-shadow: 0px 0px 20px 4px #adadad;
+    box-shadow: 0px 0px 20px 4px #adadad;
+}
+
+.vcard .avatar{
+ float: left;
+}
+
+.vcard{
+ padding: 10px 0 10px 20px;
+}
+
+.vcard span{
+ padding-left: 20px;
+}
+
+#main {
+    width:966px;
+    margin:0 auto;
+    overflow:hidden;
+    padding-bottom: 96px;
+    background:#fff;
+}  /* must be same height as the footer */
+
+.info p a{
+ font-size: 15px !important;
+ padding: 0px !important;
+}
+
+#footer {
+    width:960px;
+    margin:0 auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: -96px; /* negative value of footer height */
+    background:#fff;
+    border-top: 2px solid #8bc5e8;
+    padding-top:2px;
+}
+#footer .heading{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14pt;
+    color:#000;
+    padding:10px 0 0 20px;
+}
+#footer a{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 10pt;
+    color:#447da6;
+    padding:0 0 0 20px;
+    text-decoration:none;
+}
+#footer a:hover{
+    color:#1ba008;
+}
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+body {
+    min-width: 850px;
+    height:100%;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+}
+#container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 0 auto;
+}
+#header {
+    height: 90px;
+    width: 960px;
+    margin:0 auto;
+    z-index: -1;
+    border-bottom:2px solid #8bc5e8;
+
+}
+ul#list-nav {
+    list-style:none;
+    padding-top:20px;
+    height:60px;
+    float:right;
+    width:501px;
+    color: #447da6;
+    text-shadow: 0px 0px 1px #fff;
+}
+
+ul#list-nav li {
+    display:inline
+}
+
+ul#list-nav li a {
+    text-decoration:none;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12pt;
+    width:100px;
+    height:17px;
+    color:#447da6;
+    float:left;
+    padding: 17px 0px;
+    text-align:center;
+    margin: 0 auto;
+}
+
+ul#list-nav li a:hover {
+    color:#1ba008;
+}
+
+ul#list-nav li.current a:link, ul#list-nav li.current a:visited{
+    background:#1ba008;
+}
+.logo{
+    margin-top:20px;
+    width:322px;
+    height:54px;
+    float:left;
+}
+#header p{
+    float:left;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size:36pt;
+    margin-top:20px;
+    color:#447da6
+}
+.center{
+    width: 960px;
+    height:369px;
+    min-width: 200px;
+    min-height: 130px;
+    margin: 0 auto;
+    background: url("../images/fern-background.png") no-repeat;
+/*    background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(175,219,244)),
+	color-stop(0.69, rgb(95,170,250))
+    );
+    background-image: -moz-linear-gradient(
+	center bottom,
+	rgb(175,219,244) 0%,
+	rgb(95,170,250) 69%
+    );*/
+    position:relative;
+    box-shadow: 0px 14px 20px -6px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 14px 20px -6px rgba(0, 0, 0, 0.36);
+    -webkit-box-shadow: 0px 14px 20px -6px rgba(0, 0, 0, 0.36);
+}
+.pitch{
+    padding:20px 0 20px 20px;
+}
+.else{
+    text-align:center;
+    padding:20px 0 16px 0px;
+}
+.names{
+    text-align:center;
+    padding-bottom:40px;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size:18pt;
+    font-variant:small-caps;
+    line-height:24px;
+}
+.body{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size:1.5em;
+    line-height:30px;
+}
+.center .body{
+    padding:30px 0 0 20px;
+    text-shadow: 0px 1px 1px #ffffff;
+    filter: dropshadow(color=#ffffff, offx=0, offy=1);
+}
+.center .small{
+    padding:0 0 0 20px;
+    text-shadow: 0px 1px 1px #ffffff;
+    filter: dropshadow(color=#ffffff, offx=0, offy=1);
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size:12pt;
+    line-height:20px;
+}
+.info{
+    width:320px;
+    float:left;
+}
+.res{
+    width:318px;
+    float:left;
+    border-left: 1px solid #8bc5e8;
+    border-right: 1px solid #8bc5e8;
+}
+.leg{
+    width:320px;
+    float:left;
+}
+.green{
+    color:#1ba008;
+}
+.grey{
+    color:#5e5e5e;
+}
+.light_grey{
+    color:#afafaf;
+}
+#slider {
+    position:relative;
+    left: 10px;
+    top: 10px;
+    width:502px !important; /* Change this to your images width */
+    height:282px !important; /* Change this to your images height */
+    background:#fff url("../images/loading.gif") no-repeat 50% 50%;
+}
+#slider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:block;
+}
+#slider a {
+    border:0;
+    display:block;
+}
+#back{
+    position:relative;
+    left:415px;
+    bottom:304px;
+    width:523px;
+    height:327px;
+    background:url("../images/screen-shot-background.png") no-repeat;
+}
+#launch{
+    position:relative;
+    left:20px;
+    top: 24px;
+    width:272px;
+    height:124px;
+    background:url("../images/launch-background.png") no-repeat;
+    -webkit-box-shadow: 0px 2px 6px 1px #447da6;
+    -moz-box-shadow: 0px 2px 6px 1px #447da6;
+    box-shadow: 0px 2px 6px 1px #447da6;
+}
+#launch a{
+    text-decoration:none !important;
+}
+#launch a:hover{
+    text-decoration:underline !important;
+    color:#fff;
+}
+#launch .launch{
+    padding-top:20px;
+    margin:0 0 10px 55px;
+    height:38px;
+    overflow:hidden;
+}
+#launch .launch a{
+    display:block;
+    width:160px;
+    height:38px;
+    background:url("../images/launch-button.png") no-repeat;
+}
+#launch .launch a:hover{
+    background-position:0 -38px;
+}
+#launch .launch a:active{
+    background-position:0 -76px;
+}
+#launch .mini_logo{
+    padding-left:10px;
+}
+#launch p{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size:8pt;
+    text-align:center;
+    color:#fff;
+}
+#launch span{
+    margin:0 auto;
+    width:240px;
+    border-top:1px solid #000;
+    border-bottom:1px solid #fff;
+    margin-top:10px !important;
+    margin-bottom:10px !important;
+    display:block;
+}
